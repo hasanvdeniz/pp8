@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+#headerdiv
+{
+    text-align: center;
+    padding: 15px;
+    background-color: aqua;
+}
+
+#maindiv
+{
+    overflow: auto;
+}
+
+#leftdiv
+{
+float: left;
+width: 20%;
+margin-top: 5px;
+padding: 5px;
+background-color: blue;
+}
+
+#centerdiv
+{
+float: left;
+width: 60%;
+margin-top: 5px;
+padding: 5px;
+background-color: rgb(240, 160, 39);
+overflow-x: auto;
+}
+
+#rightdiv
+{
+float: left;
+width: 20%;
+margin-top: 5px;
+padding: 5px;
+background-color: brown;
+}
+
+#footerdiv
+{
+text-align: center;
+padding: 15px;
+background-color: bisque;
+}
+
+#img1
+{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+#tbl2
+{
+    width: 50%;
+}
+
+#tbl2 th
+{
+border: 2px solid red;
+border-radius: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-align: center;
+}
+
+#tbl2 td
+{
+    border: 2px solid red;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#tbl2 th:hover, td:hover
+{
+    background-color: blueviolet;
+}
+
+#tbl2 tr:nth-child(even)
+{
+    background-color: aquamarine;
+}
+
+#tbl1
+{
+    width: 50%;
+}
+
+#tbl1 tr:nth-child(even)
+{
+    background-color: aquamarine;
+}
+
+#tbl1 th, td
+{
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#tbl1 th:hover, td:hover
+{
+    background-color: blueviolet;
+}
+
+#lst1
+{
+    list-style-type: none;    
+    background-color: rgb(228, 78, 78);
+    overflow: hidden;
+}
+
+#lst1 li
+{
+    padding: 5px;
+    float: left;        
+}
+
+#lst1 li a
+{
+   text-decoration: none;   
+}
+
+#lst1 li a:hover
+{
+    background-color: beige;
+}
+
+@media only screen and (max-width: 800px)
+{
+    #leftdiv, #centerdiv, #rightdiv
+    {
+        width: 100%;
+    }
+}

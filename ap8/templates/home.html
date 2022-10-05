@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'stylee/1.css' %}"> 
+    <script src={% static 'javascript/1.js' %}></script>   
+</head>
+<body id="body">
+    <div id="headerdiv"><h1>here is header</h1></div>
+    <div id="maindiv">
+        <div id="leftdiv">
+            <h1 style="background-color: green; font-style: italic; color: yellow;">left div</h1>
+            <br>
+            <a href={% url 'second' %} target="_blank" style="color: rgb(240, 12, 12);">İkinci sayfa</a>
+            <br>
+            <img src={% static 'pcs/ev.jpg' %} id="img1" >
+            <br>                       
+            <button onclick="myFunction()">run script</button>
+        </div> <!--leftdiv-->
+        <div id="centerdiv">
+            <h1>center div</h1>
+<p>istediğin metin girebilirsin.<br> p içinde br kullandığında boşluk olmadan  yeni satır olur</p>
+<hr>
+<p>hr bir alt satıra geçer ve o satırda bir çizgi çeker. p ler arasında kullanıldığında üstündeki ve altındaki satırlar boş olur</p>
+<br>
+<p title="mouse ile üstüne gelince görünmesi lazım">çizgi istemiyorsan satıra sadece br ekle. p ler arasında kullanıldığında üstündeki ve altındaki satırlar boş olur</p>
+<p>her p eklediğinde zaten bir boş satır oluyor</p>
+<p><b>bold</b> <i>italik</i> <sub>subscript</sub> <sup>superscript</sup> <mark>marked</mark></p>
+<hr>
+<hr>
+
+<table id="tbl1">
+    <tr>
+        <th colspan="2">isim soyisim</th>
+        <th colspan="2">ev iş</th>
+    </tr>
+    <tr>
+        <td>ali</td>
+        <td rowspan="2">veli</td>
+        <td>home</td>
+        <td>job</td>
+    </tr>
+    <tr>
+        <td>hali</td>
+        <td>home</td>
+        <td>job</td>
+    </tr>
+
+</table>
+<hr>
+<ul id="lst1">
+    <li><a href="https://www.sabah.com.tr" target="_blank">Sabah Gazetesi</a></li>
+    <li><a href="https://www.milliyet.com.tr" target="_blank">Milliyet Gazetesi</a></li>
+    <li><a href="https://www.hurriyet.com.tr" target="_blank">Hurriyet Gazetesi</a></li>
+    <li><a href="https://www.google.com.tr" target="_blank">Google</a></li>
+</ul>
+
+
+<span>bu bir span</span>
+<span>bir sonraki span</span>
+<span><a href="https://www.google.com.tr" target="_blank">Google</a></span>
+<span>merhaba <p>span içine paragraf yazarsak ne olur</p></span>
+
+        </div> <!--centerdiv-->
+        <div id="rightdiv">
+            <h1>right div</h1>
+
+        </div><!--rightdiv-->
+    </div> <!--maindiv-->
+    <div id="footerdiv">
+<h1>footer div</h1>
+    </div> <!--footerdiv-->
+    
+</body>
+</html>
