@@ -1,0 +1,1 @@
+web: gunicorn pp8.wsgi --log-file -
